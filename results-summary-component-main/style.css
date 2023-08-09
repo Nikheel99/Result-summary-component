@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700&family=Lato:wght@700&family=Poppins:wght@300;400;500;600&family=Rubik:wght@300&display=swap");
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecf2ff;
+  font-family: "Hanken Grotesk", sans-serif;
+  margin: 0;
+}
+
+.result,
+.summary {
+  flex: 1;
+}
+
+.container {
+  display: flex;
+  max-width: 46rem;
+  border-radius: 2rem;
+  background: var(--white, #fff);
+  box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
+}
+
+.container .title {
+  color: #cac9ff;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 2.37rem;
+}
+
+.result-circle .obtained-score {
+  color: #fff;
+  text-align: center;
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 4.5rem;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  background: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
+}
+
+.result .result-title {
+  color: #fff;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 1.75rem;
+}
+
+.result .desc {
+  color: #cac9ff;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0.88rem 3.37rem 3.44rem;
+}
+
+.result-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("assets/images/bg-score.svg");
+  padding: 3.44rem 3.75rem;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  margin-top: 1rem;
+}
+
+.result-circle > span:nth-child(2) {
+  color: #cac9ff;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.5168;
+}
+
+.summary {
+  padding: 2.5rem;
+}
+
+.summary .title {
+  margin: 0;
+  color: #303b59;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 1.5rem;
+}
+
+.summary .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.summary .red {
+  display: flex;
+  background: var(
+    --red-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #f55
+  );
+}
+
+.summary .yellow {
+  background: var(
+    --yellow-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #ffb21e
+  );
+}
+
+.summary .green {
+  background: var(
+    --green-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #00bb8f
+  );
+}
+
+.summary .violet {
+  background: var(
+    --blue-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #1125d6
+  );
+}
+
+.info .info-text {
+  border-radius: 0.075rem;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.info.red .info-text > span {
+  color: #f55;
+}
+.info.yellow .info-text > span {
+  color: #ffb21e;
+}
+.info.green .info-text > span {
+  color: #00bb8f;
+}
+.info.violet .info-text > span {
+  color: #1125d6;
+}
+
+.btn {
+  color: #fff;
+  border-radius: 8rem;
+  background: #303b59;
+  margin-top: 2.56rem;
+  margin-left: 1.5rem;
+  padding: 1.06rem 6.69rem;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+  /* color: black; */
+  background: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
+  /* transition: all 2s ease-in-out; */
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    color: #fff;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container .result {
+    /* display: block;
+    flex-shrink: 0; */
+    border-radius: 2rem 2rem 2rem 2rem;
+    background: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
+
+    box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
+  }
+}
